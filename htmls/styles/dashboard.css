@@ -1,0 +1,29 @@
+.left_part, .right_part {
+	padding:0;
+	margin:0;
+	width:14%;
+	background-color: #ABDA0F;
+}	
+
+#tabs, #cart {
+	padding:0;
+	width:100%;
+}
+
+#tabs a, #cart a {
+	width:200px;
+	padding:20px;
+	clear:both;
+}
+#container {
+	margin:auto;
+	width:70%;
+	padding: 10px;
+	background-color: white;
+	min-height: 350px;
+		border-radius: 4px;
+}
+
+div.content {
+	margin-top: 8px;
+}
