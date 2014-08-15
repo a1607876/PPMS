@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
 <head>
@@ -8,7 +9,7 @@
 
 <body>
   <!--#######################################################-->
- <div class="wrapper banner">
+  <div class="wrapper banner">
     <div id="top_bar" class="flex_height">
       <div class="to_left">
         <h1>University of Adelaide</h1>
@@ -22,26 +23,33 @@
       </div>
     </div>
   </div>
-  <!--##############################################################-->
-  <div class="wrapper submit">
-    <form id="submit_pro">
-      <div class="title">
+  <!--########################################################-->
+  <div id="subPro" class="forms flex_height">
+    <form >
+      <div class="titles">
         <h3>Submit a Project</h3>
       </div>
-      <div class="inputs">
-        <input type="text" placeholder="Reference number" autofocus />
-        <div id="separator">or</div>
-        <input type="text" placeholder="Username/E-mail" autofocus />
-        <input type="password" placeholder="Password" autofucus/>
-      </div>
-      <div class="submit" class="button">    
-        <a class="to_right" href="">LOG IN</a>
-        <a class="to_left" href="index.html">BACK</a>
-      </div>
+      <fieldset class="leftPart inputs to_left">
+        <legend>Company details</legend>
+        <input type="text" placeholder="Company name" autofocus />
+        <input type="text" placeholder="Address" autofocus />
+        <input type="text" placeholder="Phone contact" autofocus />
+        <input type="text" placeholder="Email" autofocus />
+        <input type="text" placeholder="Website" autofocus />
+      </fieldset>
+
+      <fieldset class="rightPart inputs to_right">
+        <legend>Project details</legend>
+        <input type="text" placeholder="Title" autofocus />
+        <textarea placeholder="Project description" rows="10"></textarea>
+        <input type="file" />
+      </fieldset>   
     </form>
-  </div>
-      
+    <div class="sep"></div>
+    <div id="subBtn" class="submit to_right"> 
+      <a href="#">SUBMIT</a>
+      <a href="index.html">CANCEL</a>
+    </div>
+ </div>
 </body>
-
-
 </html>
