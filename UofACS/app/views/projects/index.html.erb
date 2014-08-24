@@ -1,0 +1,20 @@
+<%= link_to 'Home', welcome_index_path %>
+
+<h1>View All Projects</h1>
+
+<%= link_to 'New Project', new_project_path %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Submitter</th>
+  </tr>
+ 
+  <% @projects.each do |project| %>
+    <tr>
+      <td><%= project.name %></td>
+      <td><%= project.submitter %></td>
+      <td><%= link_to 'Detailed View', project_path(project) %></td>
+    </tr>
+  <% end %>
+</table>
